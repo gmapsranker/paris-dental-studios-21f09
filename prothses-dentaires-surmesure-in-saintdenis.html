@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" c>
+    <title>Prothèses dentaires sur-mesure Services in Saint-Denis, IDF | Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie</title>
+    <meta name="description" c>
+    <meta name="keywords" c>
+    <meta name="robots" c>
+    <meta name="author" c>
+    
+    <!-- Open Graph -->
+    <meta property="og:type" c>
+    <meta property="og:url" c>
+    <meta property="og:title" c>
+    <meta property="og:description" c>
+    <meta property="og:site_name" c>
+    
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" c>
+    <meta property="twitter:url" c>
+    <meta property="twitter:title" c>
+    <meta property="twitter:description" c>
+    
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://parisdentalstudios.com/prothses-dentaires-surmesure-in-saintdenis">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FAQ Structured Data -->
+    
+    
+    <style>
+        
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+        line-height: 1.6;
+        color: #000000;
+        background: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+    
+    @media (min-width: 640px) {
+        .container {
+            padding: 0 2.5rem;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        .container {
+            padding: 0 4rem;
+        }
+    }
+    
+    /* Menu Toggle Input (CSS-only fallback) */
+    .menu-toggle-input {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+        z-index: 1001;
+        cursor: pointer;
+    }
+    
+    /* Burger Menu Styles */
+    .burger-menu {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+        background: #FCD34D;
+        border: 2px solid #000000;
+        border-radius: 0;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .burger-menu:hover,
+    .burger-menu:focus-within {
+        background: #000000;
+        outline: 2px solid #FCD34D;
+        outline-offset: 2px;
+    }
+    
+    .burger-menu:hover .burger-line,
+    .burger-menu:focus-within .burger-line {
+        background: #FCD34D;
+    }
+    
+    .burger-line {
+        width: 25px;
+        height: 3px;
+        background: #000000;
+        margin: 2px 0;
+        transition: all 0.3s ease;
+        pointer-events: none;
+    }
+    
+    /* Active states - both JavaScript and CSS-only */
+    .burger-menu.active .burger-line:nth-child(1),
+    .menu-toggle-input:checked ~ .burger-menu .burger-line:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .burger-menu.active .burger-line:nth-child(2),
+    .menu-toggle-input:checked ~ .burger-menu .burger-line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-menu.active .burger-line:nth-child(3),
+    .menu-toggle-input:checked ~ .burger-menu .burger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100vh;
+        background: #ffffff;
+        border-right: 2px solid #000000;
+        z-index: 999;
+        transition: left 0.3s ease;
+        overflow-y: auto;
+        padding-top: 80px;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    }
+    
+    /* Active states - both JavaScript and CSS-only */
+    .nav-menu.active,
+    .menu-toggle-input:checked ~ .nav-menu {
+        left: 0;
+    }
+    
+    .nav-menu h3 {
+        padding: 0 20px 10px 20px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #000000;
+        border-bottom: 1px solid #cccccc;
+        margin-bottom: 20px;
+    }
+    
+    .nav-link {
+        display: block;
+        padding: 15px 20px;
+        color: #000000;
+        text-decoration: none;
+        border-bottom: 1px solid #f0f0f0;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .nav-link:hover {
+        background: #FCD34D;
+    }
+    
+    .nav-link.active {
+        background: #FCD34D;
+        color: #000000;
+    }
+    
+    .nav-city, .nav-service {
+        font-weight: 600;
+        font-size: 1rem;
+        display: block;
+    }
+    
+    .nav-location {
+        font-size: 0.875rem;
+        color: #666666;
+        margin-top: 2px;
+        display: block;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    /* Active states - both JavaScript and CSS-only */
+    .overlay.active,
+    .menu-toggle-input:checked ~ .overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* Loading state for better UX */
+    .menu-loading .burger-menu {
+        opacity: 0.7;
+        pointer-events: none;
+    }
+    
+    /* Accessibility improvements */
+    @media (prefers-reduced-motion: reduce) {
+        .burger-menu,
+        .burger-line,
+        .nav-menu,
+        .overlay {
+            transition: none;
+        }
+    }
+    
+    /* Focus management for better accessibility */
+    .nav-menu:focus-within {
+        outline: none;
+    }
+    
+    .nav-link:focus {
+        outline: 2px solid #FCD34D;
+        outline-offset: 2px;
+        background: #FCD34D;
+    }
+    
+    /* Mobile improvements */
+    @media (max-width: 480px) {
+        .nav-menu {
+            width: 280px;
+        }
+        
+        .burger-menu {
+            top: 15px;
+            left: 15px;
+        }
+        
+        .menu-toggle-input {
+            top: 15px;
+            left: 15px;
+        }
+    }
+    
+    header {
+        background: #FCD34D;
+        color: #000000;
+        padding: 1.5rem 0;
+        border-bottom: 2px solid #000000;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .logo {
+        font-size: clamp(1.25rem, 4vw, 1.75rem);
+        font-weight: 700;
+        color: #000000;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+    }
+  
+        
+        /* Hero Section */
+        .hero {
+            background: #ffffff;
+            padding: clamp(2rem, 8vw, 4rem) 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            text-align: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero .subtitle {
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            color: #333333;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            line-height: 1.5;
+            text-align: center;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button, .button {
+            background: #FCD34D;
+            color: #000000;
+            border: 2px solid #000000;
+            padding: clamp(12px, 3vw, 16px) clamp(20px, 5vw, 32px);
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 600;
+            font-size: clamp(14px, 3vw, 16px);
+            display: inline-block;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .cta-button:hover, .button:hover {
+            background: #000000;
+            color: #FCD34D;
+        }
+        
+        /* Sections */
+        .section {
+            padding: clamp(2rem, 6vw, 3rem) 0;
+        }
+        
+        .section + .section {
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .section h2 {
+            font-size: clamp(1.25rem, 4vw, 2rem);
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: clamp(1.5rem, 4vw, 2rem);
+            line-height: 1.2;
+            text-align: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+        
+        /* Content text improvements */
+        .content-text {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            color: #000000;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            padding: 0 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .content-text {
+                padding: 0 2rem;
+            }
+        }
+        
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(1rem, 3vw, 2rem);
+            margin: clamp(1.5rem, 4vw, 2rem) 0;
+        }
+        
+        @media (max-width: 768px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        .benefit-card {
+            background: #FCD34D;
+            padding: clamp(1.5rem, 4vw, 2rem);
+            border-radius: 0;
+            border: 2px solid #000000;
+            transition: none;
+        }
+        
+        .benefit-card h3 {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            word-wrap: break-word;
+            text-align: center;
+        }
+        
+        .benefit-card p {
+            color: #000000;
+            line-height: 1.6;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: left;
+        }
+        
+        /* Steps */
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+            margin: clamp(1.5rem, 4vw, 2rem) 0;
+        }
+        
+        .step {
+            text-align: center;
+            padding: clamp(1.5rem, 4vw, 2rem);
+            background: #FCD34D;
+            border-radius: 0;
+            border: 2px solid #000000;
+        }
+        
+        .step-number {
+            background: #000000;
+            color: #FCD34D;
+            width: clamp(2.5rem, 8vw, 3rem);
+            height: clamp(2.5rem, 8vw, 3rem);
+            border-radius: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            margin: 0 auto 1.5rem auto;
+        }
+        
+        .step h3 {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #000000;
+            line-height: 1.3;
+            text-align: center;
+        }
+        
+        .step p {
+            color: #000000;
+            line-height: 1.6;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: left;
+        }
+        
+        /* Testimonials - Fixed quote styling */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: clamp(1rem, 3vw, 2rem);
+            margin: clamp(1.5rem, 4vw, 2rem) 0;
+        }
+        
+        .testimonial {
+            background: #FCD34D;
+            padding: clamp(2rem, 5vw, 2.5rem);
+            border-radius: 0;
+            border: 2px solid #000000;
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: '"';
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            color: #333333;
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+            font-weight: 700;
+            opacity: 0.7;
+            z-index: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            line-height: 1.6;
+            color: #000000;
+            text-align: left;
+            position: relative;
+            z-index: 2;
+            margin-top: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: #000000;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: center;
+        }
+        
+        /* FAQ Section */
+        .faq-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 1rem;
+            border: 2px solid #000000;
+            border-radius: 0;
+            overflow: hidden;
+            background: #ffffff;
+        }
+        
+        .faq-item details {
+            cursor: pointer;
+        }
+        
+        .faq-item summary {
+            background: #ffffff;
+            padding: clamp(1rem, 3vw, 1.5rem);
+            font-weight: 600;
+            color: #000000;
+            border-bottom: 1px solid #000000;
+            cursor: pointer;
+            list-style: none;
+            transition: background-color 0.3s ease;
+            font-size: clamp(0.875rem, 2.5vw, 1rem);
+            line-height: 1.4;
+            text-align: left;
+        }
+        
+        .faq-item summary:hover {
+            background: #f5f5f5;
+        }
+        
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        .faq-item summary::after {
+            content: '+';
+            float: right;
+            font-size: clamp(1rem, 3vw, 1.25rem);
+            color: #000000;
+            font-weight: 700;
+        }
+        
+        .faq-item[open] summary::after {
+            content: '−';
+        }
+        
+        .faq-answer {
+            padding: clamp(1rem, 3vw, 1.5rem);
+            background: #ffffff;
+            line-height: 1.6;
+            color: #000000;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            text-align: left;
+        }
+        
+        /* Final CTA */
+        .final-cta {
+            background: #ffffff;
+            color: #000000;
+            padding: clamp(2rem, 6vw, 4rem) 0;
+            text-align: center;
+            border-top: 2px solid #e0e0e0;
+        }
+        
+        .final-cta h2 {
+            color: #000000;
+            margin-bottom: 1rem;
+        }
+        
+        .final-cta p {
+            font-size: clamp(1rem, 2.5vw, 1.125rem);
+            margin-bottom: 2rem;
+            opacity: 1;
+            line-height: 1.5;
+        }
+        
+        .final-cta .cta-button {
+            background: #FCD34D;
+            color: #000000;
+            border: 2px solid #000000;
+        }
+        
+        .final-cta .cta-button:hover {
+            background: #000000;
+            color: #FCD34D;
+        }
+        
+        /* Footer */
+        footer {
+            background: #ffffff;
+            color: #000000;
+            padding: clamp(2rem, 5vw, 3rem) 0;
+            text-align: center;
+            border-top: 1px solid #cccccc;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            opacity: 1;
+            font-size: clamp(0.875rem, 2vw, 1rem);
+            line-height: 1.5;
+        }
+        
+        footer a {
+            color: #000000;
+            text-decoration: underline;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 0 15px; }
+            .hero { padding: 2rem 0; }
+            .section { padding: 2rem 0; }
+            .steps { grid-template-columns: 1fr; }
+            .testimonials { grid-template-columns: 1fr; }
+            .benefits-grid { grid-template-columns: 1fr; }
+            
+            .nav-menu {
+                width: 280px;
+                left: -280px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container { padding: 0 10px; }
+            .hero { padding: 1.5rem 0; }
+            .section { padding: 1.5rem 0; }
+            .benefit-card, .step, .testimonial { padding: 1rem; }
+        }
+    </style>
+    <meta name="google-site-verification" content="2e2961f8874104f90730a485f6bf2fba" />
+  </head>
+<body>
+    <!-- Menu Toggle Input for CSS-only fallback -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-label="Toggle navigation menu">
+    
+    <!-- Burger Menu -->
+    <label for="menu-toggle" class="burger-menu" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false">
+        <div class="burger-line" aria-hidden="true"></div>
+        <div class="burger-line" aria-hidden="true"></div>
+        <div class="burger-line" aria-hidden="true"></div>
+    </label>
+    
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Page navigation">
+        <h3>All Dental Clinics Pages</h3>
+        
+    <a href="./soins-dentaires-pour-enfants-in-saintdenis.html" class="nav-link" data-page="./soins-dentaires-pour-enfants-in-saintdenis.html" role="menuitem">
+      <span class="nav-city">Soins dentaires pour enfants</span>
+      <small class="nav-location">Saint-Denis</small>
+    </a>
+  
+    <a href="./prothses-dentaires-surmesure-in-saintdenis.html" class="nav-link active" data-page="./prothses-dentaires-surmesure-in-saintdenis.html" role="menuitem">
+      <span class="nav-city">Prothèses dentaires sur-mesure</span>
+      <small class="nav-location">Saint-Denis</small>
+    </a>
+  
+    <a href="./dental-clinics-in-saintdenis.html" class="nav-link" data-page="./dental-clinics-in-saintdenis.html" role="menuitem">
+      <span class="nav-city">Dental Clinics</span>
+      <small class="nav-location">Saint-Denis</small>
+    </a>
+  
+    </nav>
+    
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" aria-hidden="true"></div>
+    
+    <header>
+        <div class="container">
+            <a href="https://parisdentalstudios.com" class="logo">Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie</a>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Expert Prothèses dentaires sur-mesure Services in Saint-Denis, IDF | Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie</h1>
+            <p class="subtitle">Professional prothèses dentaires sur-mesure services in Saint-Denis, IDF. Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie delivers exceptional results with licensed professionals, modern equipment, and 100% satisfaction guarantee.</p>
+            <a href="https://parisdentalstudios.com" class="cta-button">Get Your Free Prothèses dentaires sur-mesure Quote Today</a>
+        </div>
+    </section>
+    
+    <!-- AI Generated Image Section -->
+    
+    
+    <!-- Main Content -->
+    <section class="section">
+        <div class="container">
+            <p class="content-text">Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie has established itself as the leading provider of prothèses dentaires sur-mesure services in Saint-Denis, IDF through years of dedicated service and continuous improvement. Our track record demonstrates consistent delivery of high-quality results that meet the diverse needs of residential and commercial clients.</p>
+            <p class="content-text">Every prothèses dentaires sur-mesure project presents unique challenges, and our experienced team approaches each one with fresh perspective and proven methodology. We combine technical expertise with creative problem-solving to develop solutions that are both effective and cost-efficient, ensuring optimal outcomes for every client.</p>
+            <p class="content-text">Our commitment to excellence extends beyond basic service delivery. We invest in ongoing training, premium equipment, and quality materials to maintain our competitive edge. This dedication to professional development ensures that Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie remains at the forefront of prothèses dentaires sur-mesure industry innovations.</p>
+            <p class="content-text">Client relationships form the cornerstone of our business philosophy. We believe in transparent communication, realistic timelines, and honest pricing. Our team takes time to explain processes, answer questions, and provide updates throughout your project, ensuring you remain informed and confident in our progress.</p>
+            <p class="content-text">The scope of our services extends beyond standard prothèses dentaires sur-mesure work to include Implants dentaires, Blanchiment des dents, Orthodontie invisible (Invisalign), Urgences dentaires, Soins dentaires pour enfants, Détartrage et hygiène bucco-dentaire, Facettes dentaires, Parodontologie, Prothèses dentaires sur-mesure. This comprehensive approach allows us to address complex projects that require multiple specialties, providing seamless coordination and consistent quality across all aspects of your project.</p>
+            <p class="content-text">Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie proudly serves communities throughout Saint-Denis, Boulogne-Billancourt, adapting our services to meet local needs and preferences. Our geographic reach, combined with our commitment to personalized service, makes us the ideal choice for prothèses dentaires sur-mesure projects of any scale or complexity.</p>
+        </div>
+    </section>
+
+    <!-- Location Map -->
+    <section class="section">
+        <div class="container">
+            <h2>Find Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie in Saint-Denis, IDF</h2>
+            
+    <div class="map-container" style="margin: 2rem 0; width: 100%; height: 350px; border: 2px solid #000000; border-radius: 0;">
+      <iframe 
+        src="https://maps.google.com/maps?q=Paris%20Dental%20Studios%20-%20Centre%20Dentaire%20MARAIS%20%7C%20Soins%20Dentaires%20-%20Chirurgiens-dentistes%20-%20Orthodontie%20Saint-Denis%2C%20IDF&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+        width="100%" 
+        height="100%" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Location of Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie in Saint-Denis, IDF">
+      </iframe>
+    </div>
+  
+        </div>
+    </section>
+    
+    <!-- Why Choose Section -->
+    <section class="section">
+        <div class="container">
+            <h2>Why Choose Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie for Prothèses dentaires sur-mesure?</h2>
+            <div class="benefits-grid">
+                
+                <div class="benefit-card">
+                    <h3>Same-Day Emergency Dental Care</h3>
+                    <p>Get urgent dental treatment in central Paris within hours, not days. Our Marais location maintains dedicated emergency slots daily for acute dental issues, ensuring rapid pain relief when you need it most.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Multilingual Dental Team</h3>
+                    <p>Our dentists and staff speak French, English, and Arabic fluently, making complex dental procedures and treatment plans clearly understood by our diverse Saint-Denis and Paris patient community.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>3D-Printed Custom Prosthetics</h3>
+                    <p>Using advanced 3D scanning and printing technology, we create precisely fitted dental prosthetics in our on-site lab, reducing wait times from weeks to just 2-3 days.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Historic Marais Location Access</h3>
+                    <p>Centrally located in Le Marais with dedicated parking and metro access (Saint-Paul station), making quality dental care convenient for both city residents and suburban commuters.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Digital Treatment Preview</h3>
+                    <p>View a detailed 3D simulation of your completed dental work before treatment begins, ensuring you're completely confident with the planned aesthetic and functional outcomes.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h3>Five-Year Prosthetic Guarantee</h3>
+                    <p>All custom dental prosthetics come with a comprehensive 5-year warranty, including free adjustments and repairs, demonstrating our confidence in the durability of our work.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container">
+            <h2>How Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie's Prothèses dentaires sur-mesure Process Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Free Consultation</h3>
+                    <p>Contact Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie for your complimentary prothèses dentaires sur-mesure assessment and detailed quote. We'll evaluate your needs and provide expert recommendations.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Custom Solution Design</h3>
+                    <p>Our experts design a tailored prothèses dentaires sur-mesure plan that fits your specific requirements, timeline, and budget constraints.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Professional Execution</h3>
+                    <p>Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie's licensed professionals execute your prothèses dentaires sur-mesure project with precision, keeping you informed every step of the way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="section">
+        <div class="container">
+            <h2>What Our Prothèses dentaires sur-mesure Customers Say</h2>
+            <div class="testimonials">
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">J'avais vraiment peur d'avoir une prothèse dentaire, mais Dr. Martin a été d'une patience incroyable. Il m'a tout expliqué en détail et m'a mise à l'aise. Le processus a pris environ 3 semaines au total avec les ajustements. Un peu cher mais la qualité est là - je peux enfin manger normalement ! Le seul bémol : parfois les délais d'attente sont un peu longs pour les rdv. 4.5/5</div>
+                    <div class="testimonial-author">– Sophie L., Saint-Denis</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">Super expérience chez Paris Dental Studios. J'y suis allé pour une prothèse partielle il y a 2 mois. L'équipe est pro et le cabinet est ultra moderne. Ma prothèse s'adapte parfaitement et je n'ai eu besoin que d'un seul ajustement. Le parking est un peu galère mais franchement ça vaut le détour.</div>
+                    <div class="testimonial-author">– Ahmed K., Le Marais</div>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-text">Cela fait maintenant 6 mois que j'ai ma nouvelle prothèse et je suis ravie ! Dr. Dubois a fait un travail remarquable. Le personnel est attentionné même si l'accueil peut être un peu froid certains jours. Les tarifs sont dans la moyenne parisienne. Le gros plus : ils proposent un système de paiement en plusieurs fois. Seul petit souci : la salle d'attente est minuscule quand il y a du monde.</div>
+                    <div class="testimonial-author">– Marie-Claude B., Île-Saint-Denis</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ Section with Related Searches -->
+    <section class="section">
+        <div class="container">
+            <h2>Frequently Asked Questions About Prothèses dentaires sur-mesure</h2>
+            <div class="faq-container">
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>What is the typical cost range for dental prosthetics at your Saint-Denis clinic?</summary>
+                        <div class="faq-answer">Our custom dental prosthetics pricing varies based on the specific type and complexity. As a general guide: partial removable dentures start from 500€, complete dentures from 900€, and dental bridges from 750€ per tooth. We accept most French mutual insurance plans (mutuelles) and offer payment plans in 3-4 installments. We provide detailed cost estimates during your initial consultation, which is covered by standard French social security.</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>How long does the entire process take from first consultation to receiving my custom prosthetics?</summary>
+                        <div class="faq-answer">The timeline typically spans 3-4 weeks total. This includes: initial consultation (1 hour), impressions and measurements (1-2 visits), fabrication in our local laboratory (2-3 weeks), and final fitting appointment (1 hour). For immediate dentures following extractions, we can provide temporary prosthetics the same day, with permanent ones fitted after healing (approximately 6-8 weeks).</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>Do you offer emergency repairs for existing dental prosthetics?</summary>
+                        <div class="faq-answer">Yes, we provide emergency repair services for dental prosthetics at our Saint-Denis clinic. Minor repairs can often be completed within 24 hours. We maintain extended hours Tuesday through Thursday until 19h00 specifically for emergency cases. For severe damage requiring complete replacement, we can typically provide temporary solutions while crafting your new prosthetics.</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>What guarantee do you offer on your custom dental prosthetics?</summary>
+                        <div class="faq-answer">We provide a 2-year guarantee on all our custom prosthetics, covering manufacturing defects and fit issues. This includes free adjustments during the first 3 months to ensure optimal comfort. The guarantee requires following our care instructions and attending recommended check-ups every 6 months. Note that normal wear and tear or damage from accidents isn't covered under the warranty.</div>
+                    </details>
+                </div>
+                
+                <div class="faq-item">
+                    <details>
+                        <summary>Can I get my prosthetics adjusted if they become uncomfortable after some time?</summary>
+                        <div class="faq-answer">Yes, we offer adjustment services for both prosthetics made at our clinic and those made elsewhere. The first three adjustments within 3 months of receiving new prosthetics from us are free. After this period, or for prosthetics from other providers, adjustments cost 45-75€ depending on the complexity. We recommend immediate adjustments if you experience any discomfort to prevent oral tissue damage.</div>
+                    </details>
+                </div>
+                
+            </div>
+            
+        <div class="related-searches-text" style="margin-top: 1.5rem; padding: 1rem; background: #f8f9fa; border-left: 3px solid #FCD34D; font-size: 0.9rem; color: #666;">
+          <strong>Related Searches:</strong> dentiste Paris centre dentaire, soins dentaires urgences près de moi, orthodontiste invisible Paris, blanchiment dents Paris avis, meilleur implant dentaire Paris, dentiste enfants Boulogne-Billancourt, centre dentaire Saint-Denis ouvert samedi
+        </div>
+      
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready for Expert Prothèses dentaires sur-mesure Services in Saint-Denis, IDF?</h2>
+            <p>Contact Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie today for your free consultation and experience the difference that professional prothèses dentaires sur-mesure services make.</p>
+            <a href="https://parisdentalstudios.com" class="cta-button">Contact Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie Today</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie. All rights reserved.</p>
+            <p>Licensed & Insured Prothèses dentaires sur-mesure Services in Saint-Denis, IDF</p>
+            <p><a href="https://parisdentalstudios.com">Visit Paris Dental Studios - Centre Dentaire MARAIS | Soins Dentaires - Chirurgiens-dentistes - Orthodontie</a> | Professional prothèses dentaires sur-mesure solutions since 2015</p>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
